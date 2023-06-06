@@ -4,3 +4,4 @@ for ix in range(0, 10):
         print("{:d}{:d}".format(ix, jx), end='')
         if (ix != 8 or jx != 9):
             print(", ", end='')
+print()
