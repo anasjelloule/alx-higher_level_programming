@@ -1,9 +1,0 @@
-def search_replace(my_list, search, replace):
-        nw_lst = my_list[:]
-        for i in my_list:
-                if i==search:
-                        i=replace
-                        ls=[1,2,4,89,67,56]
-
-search_replace(ls,2,90)
-[print(y) for y in ls]
