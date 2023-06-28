@@ -8,6 +8,6 @@ def safe_print_list(my_list = [], x = 0):
             anas += 1
         except IndexError:
             print()
-            return anas
+            return (anas)
     print()
-    return anas
+    return (anas)
