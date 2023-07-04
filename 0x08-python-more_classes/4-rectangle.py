@@ -64,7 +64,5 @@ class Rectangle:
         return ("".join(rct))
 
     def __repr__(self):
-        """modifies _repr_
-
-        """
+        """return modifies _repr_ """
         return("Rectangle({}, {})".format(self.width, self.height))
