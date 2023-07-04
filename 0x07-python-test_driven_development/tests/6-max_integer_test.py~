@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+"""UnitTSTS max_integer([..])."""
+
+import unittest
+max_integer = __import__('6-max_integer').max_integer
+
+
+class TestMaxInteger(unittest.TestCase):
+
+    def test_first(self):
+        matx = [1, 2, 3, 4]
+        self.assertEqual(max_integer(matx), 4)
+
+    def test_third(self):
+        strings = ["ANAS", "is", "my", "name"]
+        self.assertEqual(max_integer(strings), "name")
+
+    def test_for(self):
+        matx4 = {8: 'd', 7: 'P',  2: 'v'}
+        self.assertRaises(KeyError, max_integer, matx4)
+
+    def test_eght(self):
+        matrix1 = [9]
+        self.assertEqual(max_integer(matrix1), 9)
+
+    def test_sx(self):
+        matrix = 'fatima'
+        self.assertEqual(max_integer(matrix), 'a')
+        
+    def test_second(self):
+        matx2 = []
+        self.assertEqual(max_integer(matx2), None)
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -1,0 +1,20 @@
+# 5-text_indentation.txt
+
+
+================================
+Use 5-text_indentation
+================================
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("a norml txt")
+a norml txt
+>>> text_indentation("hello")
+hello
+>>> text_indentation(1996)
+Traceback (most recent call last):
+TypeError: text must be a string
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+>>> text_indentation("756758,653") 
+756758,653
