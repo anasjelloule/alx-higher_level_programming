@@ -1,0 +1,19 @@
+============================
+Use 100-matrix_mul
+============================
+
+
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+>>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+[[7, 10], [15, 22]]
+>>> m_a = [
+... [1, 2],
+... [3, 4]
+... ]
+>>> m_b = [
+... [1, 2],
+... [3, 4, 5]
+... ]
+>>> print(matrix_mul(m_a, m_b))
+Traceback (most recent call last):
+TypeError: each row of m_b must should be of the same size
