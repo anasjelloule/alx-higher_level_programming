@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""object attribute lookup function."""
+# Anas Jelloul
+"""Impliment attribute lookup function."""
 
 
 def lookup(obj):
+    """Return list of an object's attributes."""
     return (dir(obj))
