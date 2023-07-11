@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#ANAS Jelloul
+# ANAS Jelloul
 """append to fil creates i not"""
 
 
@@ -11,5 +11,6 @@ def append_write(filename="", text=""):
     Returns:
        number of characters.
     """
+    
     with open(filename, mode="a+", encoding='utf-8') as f:
         return(f.write(text))
