@@ -4,10 +4,10 @@
 
 
 class Student:
-    """Init a new Student.
+    """Class student."""
 
     def __init__(self, first_name, last_name, age):
-        """Initialize a new Student.
+        """Init a new Student.
 
         Args:
             first_name (str): first
@@ -20,4 +20,7 @@ class Student:
 
     def to_json(self):
         """Return dictionary representation of the Student."""
+        if (type(attrs) == list and
+                all(type(ele) == str for ele in attrs)):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
