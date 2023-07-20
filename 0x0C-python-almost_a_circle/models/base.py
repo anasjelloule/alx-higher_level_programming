@@ -4,6 +4,7 @@
 import json
 import csv
 
+
 class Base:
     """Class base model.
 
@@ -37,7 +38,7 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """Write the JSON "serialized list dicts".
@@ -63,7 +64,6 @@ class Base:
         if json_string is None or json_string == "[]":
             return []
         return json.loads(json_string)
-
 
     @classmethod
     def create(cls, **dictionary):
